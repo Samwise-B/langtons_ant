@@ -8,15 +8,6 @@
 cell *cells;
 static char *cell_states;
 
-// get max_x and get max_y are used to pass the static var to langton.c for torus wrapping
-int get_max_x() {
-   return max_x;
-};
-
-int get_max_y() {
-   return max_y;
-};
-
 void start_visualisation(struct ant* ant) {
    // initialise the ncurses library, setting the 2D plane's width
    setlocale(LC_ALL, "");
@@ -53,8 +44,6 @@ void visualise_and_advance(struct ant* ant, struct rule* rule) {
       refresh();
       
       /* Advance to next step */
-      //cell_at(ant->y, ant->x)
-      // apply_rule(&cell_under_ant, ant)
       apply_rule_general(&cell_under_ant, ant, rule);
       move_forward(ant);
 }
