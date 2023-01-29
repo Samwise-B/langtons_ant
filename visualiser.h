@@ -9,10 +9,6 @@ static int max_y;
 
 typedef enum colour cell;
 
-// to pass max X and max Y between files properly
-int get_max_x();
-int get_max_y();
-
 void start_visualisation();
 void visualise_and_advance();
 bool not_quit();
