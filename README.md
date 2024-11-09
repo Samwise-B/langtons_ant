@@ -42,10 +42,9 @@ Through this project, I created a **text-based simulation** that highlights the 
    cd langtons-ant-c
 2. Build the project using CMake:
    ```
-  mkdir build
-  cd build
-  cmake ..
-  make
+   mkdir build
+   cd build
+   make ..
 
 ## Running the Simulation
 After building, run the executable generated in the build directory:
