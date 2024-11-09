@@ -41,7 +41,7 @@ Through this project, I created a **text-based simulation** that highlights the 
    git clone https://github.com/yourusername/langtons-ant-c.git
    cd langtons-ant-c
 2. Build the project using CMake:
-  ```
+   ```
   mkdir build
   cd build
   cmake ..
